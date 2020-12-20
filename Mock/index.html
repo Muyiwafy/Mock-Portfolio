@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div class="">OLUWAMUYIWA FADARE</div>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/Gargoyle.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png">
+                        </div>
+
+
+                        <div class="subtitle">
+                            A trading platform designed to make the foreign exchange markets understandable.
+                        </div>
+                    </div>
+                </div> 
+
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/mac.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/dailysmarty.png">
+                    </div>
+
+
+                    <div class="subtitle">
+                        A FAQs website for amateur programmers.                        </div>
+                    </div>
+            </div> 
+
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/brushes.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/eventbrite.png">
+                    </div>
+
+
+                    <div class="subtitle">
+                        A website for arts and crafts event near you.
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/focus.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/edutechional.png">
+                    </div>
+
+
+                    <div class="subtitle">
+                        Website for melancholic individuals.
+                    </div>
+                </div>
+            </div> 
+
+            
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/code.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/devtrunk.png">
+                    </div>
+
+
+                    <div class="subtitle">
+                        Programmer online hangout station.
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/passage.jpg)"></div>
+
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/ministry-safe.png">
+                    </div>
+
+
+                    <div class="subtitle">
+                        An abstract wallpaper website.
+                    </div>
+                </div>
+
+            </div> 
+
+
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            // console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            // console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
+</script>
+</html>
